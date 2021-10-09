@@ -1,0 +1,268 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: hsl(185, 41%, 84%);
+  font-size: 24px;
+  font-family: 'Space Mono', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h4,
+p,
+h5,
+h6,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  width: 750px;
+  padding: 20px;
+  height: 350px;
+  border-radius: 20px;
+  display: flex;
+}
+
+.right {
+  background: hsl(183, 100%, 15%);
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+}
+.left {
+  height: 100%;
+  width: 50%;
+  padding: 10px;
+}
+
+.left label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+input[type='number']::placeholder {
+  padding-left: 95%;
+  font-family: 'Space Mono', monospace;
+  font-size: 20px;
+  color: hsl(184, 14%, 56%);
+}
+
+.form-field input {
+  padding: 8px;
+  width: 90%;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  position: relative;
+  border-radius: 5px;
+}
+
+.dollar {
+  position: absolute;
+  left: 10px;
+  top: 35px;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 8%;
+}
+
+.first {
+  display: flex;
+  width: 90%;
+}
+.second {
+  display: flex;
+  width: 90%;
+  margin-top: 3.5%;
+}
+.left li {
+  margin-right: 10px;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  width: 33%;
+  padding: 5px;
+  font-size: 17px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.tip label {
+  margin-bottom: 10px;
+}
+
+#custom {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+}
+
+button {
+  margin-right: 10px;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  width: 33%;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+#bottom-field {
+  margin-top: 10%;
+}
+
+.person {
+  position: absolute;
+  left: 10px;
+  top: 35px;
+}
+
+input[id='confirm-people']::placeholder {
+  padding-left: 95%;
+  font-family: 'Space Mono', monospace;
+  font-size: 20px;
+  color: hsl(184, 14%, 56%);
+}
+
+.people-count {
+  text-align: right;
+  display: block;
+  font-size: 20px;
+  font-family: 'Space Mono', monospace;
+  color: hsl(184, 14%, 56%);
+}
+.billy-number {
+  text-align: right;
+  display: block;
+  font-size: 15px;
+  font-family: 'Space Mono', monospace;
+  color: hsl(184, 14%, 56%);
+}
+.right {
+  padding: 2rem;
+  display: flex;
+  position: relative;
+}
+.right h2 {
+  color: white;
+  font-size: 12px;
+  margin-left: 2%;
+}
+.lefty span {
+  color: hsl(184, 14%, 56%);
+  font-size: 10px;
+  margin-left: 4%;
+}
+
+.tip-dollar {
+  color: hsl(172, 67%, 45%);
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 35%;
+}
+
+.righty {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.lefty {
+  width: 60%;
+}
+
+.righty span {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.total {
+  margin-top: 35%;
+}
+
+.tip-dollar2 {
+  color: hsl(172, 67%, 45%);
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.reset {
+  background-color: hsl(172, 67%, 45%);
+  width: 18rem;
+  height: 3rem;
+  text-align: center;
+  position: absolute;
+  font-weight: bold;
+  bottom: 15%;
+  text-transform: uppercase;
+  color: hsl(183, 100%, 15%);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 800px;
+  }
+  .container {
+    flex-direction: column;
+    width: 320px;
+    height: 100%;
+  }
+  .right {
+    margin-top: 5%;
+    height: 30%;
+    width: 100%;
+  }
+  .left {
+    height: 36%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .form-field input {
+    width: 100%;
+  }
+  .first {
+    width: 100%;
+  }
+  .second {
+    width: 100%;
+  }
+  .reset {
+    width: 80%;
+  }
+
+  .total {
+    margin-top: 10%;
+  }
+  .tip-dollar {
+    margin-bottom: 0%;
+  }
+}
